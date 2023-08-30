@@ -1,0 +1,6 @@
+{
+    "names": ["John", "Alice", "Bob", "Charlie", "David"],
+    "origins": ["London", "Paris", "Berlin", "Rome", "Madrid"],
+    "destinations": ["Tokyo", "Beijing", "Delhi", "Sydney", "New York"]
+  }
+  

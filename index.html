@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io Client</title>
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io.connect('http://localhost:3000');
+        
+        socket.on('receivedData', function(data) {
+            console.log('Decrypted and saved data from server:', data);
+        });
+
+        // For example purposes, emitting encrypted data back to the server
+        const encryptedData = "YOUR_ENCRYPTED_DATA_HERE";
+        socket.emit('sendData', encryptedData);
+    </script>
+</body>
+</html>
